@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="frontend/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <title>Kyoto Animation</title>
+</head>
+
+<body><!--Body of home page-->
+    <section> 
+        <nav class="navbar">  <!--Navigation bar-->    
+            <img src="../frontend/Assests/kyoanilogo.png" alt="logo" class="logo" /><!--logo of the company-->  
+            <input type="checkbox" id="check"><!--clickable-->  
+            <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>  <!--for navbar when in media query-->  
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li><!--Home Page-->  
+                <li><a href="works.html">Works</a></li><!--work page-->  
+                <li><a href="about.html">About</a></li><!--about page-->  
+                <li><a href="feedback.html">Feedback</a></li><!--feedback page-->  
+            </ul>
+
+        </nav>
+        <div class="main_header" -->  <!--main header of the home page with video-->  
+            <div class="header_text"><!--container text-->  
+                <h1>想いを未来へ広げて</h1>
+                <p>Extending our emotions towards the future</p>
+            </div>
+            <video autoplay loop muted plays-inline class="header_vid">
+                <source src="../frontend/Assests/kyoanivid.mp4" type="video/mp4"><!--video background-->  
+            </video>
+        </div>
+    </section >
+    <section class="about sec"><!--abour section-->  
+        <div class="about_text"><!--about container text-->  
+            <p class="about_small">About</p>
+            <h1>Kyoto Animation Studio</h1>
+            <p class="aboutp">Kyoto Animation was co-founded in 1985 by married couple Yoko and Hideaki Hatta; it became a limited
+                company in 1985 and a corporation in 1999. Yoko Hatta, who serves as the company's vice president,
+                had worked as a painter at Mushi Production until she moved to Kyoto after marrying her husband, who
+                serves as president. The company's logo originates from the kanji kyō, the first character of
+                Kyoto.</p>
+
+            <p  class="aboutp">
+                Kyoto Animation has become recognized for its high production values and "sensitivity to the wonders and
+                quandaries of ordinary life". Unlike most animation studios, the company's employees are salaried
+                rather than freelance workers, and are trained in-house.These practices have been cited as
+                encouraging employees to focus on frame quality rather than production quotas. The company has
+                received praise for the positive treatment of its staff, and was honored by Women in Animation with its
+                Diversity Award in 2020 for its efforts in creating a gender-balanced workforce and encouraging women to
+                enter the industry.
+            </p>
+        </div>
+    </section>
+
+    <section class="sec"> <!--section for slider-->  
+        <div class="slider"><!--div for slider container-->  
+            <div class="list"><!--list to container the anime content and image-->  
+                <div class="item active"><!--active item to show it first-->  
+                    <img src="../frontend/Assests/silent.jpg"><!--first image of slider-->  
+                    <div class="content"><!--info of the anime-->  
+                        <p>Top Kyoto Animation Anime</p>
+                        <h2>A Silent Voice</h2>
+                        <p>A grade-school student with a hearing impairment is bullied and transfers to another school.
+                            Years later, the former bully is tormented by his behaviour and sets out to make amends.</p>
+                    </div>
+
+                </div>
+                <div class="item"><!--second item for slider-->  
+                    <img src="../frontend/Assests/violet.jpeg">
+                    <div class="content">
+                        <p>Top Kyoto Animation Anime</p>
+                        <h2>Violet Evergarden</h2>
+                        <p>After the aftermath of a war, a young girl who was used as a tool for war learns to properly
+                            live. With the scars of burns, she goes back to her past to discover her true feelings
+                            towards
+                            the Major.</p>
+                    </div>
+                </div>
+                <div class="item"><!--third item for slider-->  
+                    <img src="../frontend/Assests/clannad.avif">
+                    <div class="content">
+                        <p>Top Kyoto Animation Anime</p>
+                        <h2>Clannad</h2>
+                        <p>So after the ending of Clannad, Tomoya and Nagisa become a couple. Tomoya fights through
+                            thick
+                            and thin with Nagisa's parents to make sure she graduates from school and help her through
+                            her
+                            strange, inexplicable illness, something she inherited upon birth.</p>
+                    </div>
+
+                </div>
+
+                <div class="item"><!--fourth item for slider-->  
+                    <img src="../frontend/Assests/hyouka.jpg">
+                    <div class="content">
+                        <p>Top Kyoto Animation Anime</p>
+                        <h2>Hyouka</h2>
+                        <p>Hyouka centers on Oreki Hotarou and his life in the Classic Literature Club. His mundane
+                            world is
+                            flipped upside down as they begin to solve various mysteries. </p>
+                    </div>
+                </div>
+                <div class="item"><!--fifth item for slider-->  
+                    <img src="../frontend/Assests/beyond.avif">
+                    <div class="content">
+                        <p>Top Kyoto Animation Anime</p>
+                        <h2>Beyond the Boundary</h2>
+                        <p>this story follows a young boy named Akihito Kanbara who is an immortal being and half a
+                            spirit.
+                            After Akihito saves a girl named Mirai Kuriyama from committing suicide, he learns that she
+                            is a
+                            spirit world warrior their lives become intertwined.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="arrows"><!--arrow buttons for slider-->  
+                <button id="prev">< </button>
+                        <button id="next">></button>
+            </div>
+            <div class="thumbnail"><!--portrait image1--->  
+                <div class="item active">
+                    <img src="frontend/Assests/silentthumb.jpg">
+                    <div class="content">
+                    </div>
+                </div>
+                <div class="item"><!--portrait image2-->  
+                    <img src="frontend/Assests/violetthumb.jpg">
+                    <div class="content">
+                    </div>
+                </div>
+                <div class="item"><!--portrait image3-->  
+                    <img src="frontend/Assests/clannadthumb.jpg">
+
+                </div>
+                <div class="item"><!--portrait image4-->  
+                    <img src="frontend/Assests/hyouka.jpg">
+                    <div class="content">
+                    </div>
+                </div>
+                <div class="item"><!--portrait image5-->  
+                    <img src="frontend/Assests/beyondthumb.jpg">
+                    <div class="content">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="all_work sec"><!--button to go to work page-->  
+            <button><a href="works.html">More >></a></button>
+        </section>
+    
+    <footer class="">
+        <div class="footer_row"><!--footer-->  
+            <div class="footer_col"><!--first column of footer-->  
+                <img src="../frontend/Assests/kyoanilogo.png" alt="logo" class="foot_logo" />   <!--background image for footer-->  
+            </div>
+            <div class="footer_col"><!--second column of footer-->  
+                <h3>About Us</h3>
+                <p>Coorporate Profile</p>
+                <p>Detials of Our Business</p>
+                <p>Studios and Offices</p>
+                <p>Event Information</p>
+                <p>Our Commercials</p>
+            </div>
+            <div class="footer_col"><!--third column of footer-->  
+                <h3>Store</h3>
+                <p>Kyoani Shop! Online Store</p>
+                <p>Kyoani&Do Shop!</p>
+            </div>
+        </div>
+    </footer>
+    <script src="frontend/slider.js"></script><!--linking slider.js for the slider to work-->  
+</body>
+
+</html>

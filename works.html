@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="frontend/style.css">
+    <title>Kyoto Animation</title>
+</head>
+
+<body class="work"><!--class for work body-->  
+    <section>
+        <nav class="navbar"><!--same navbar as the home page-->  
+            <img src="../frontend/Assests/kyoanilogo.png" alt="logo" class="logo" />
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>  
+            <ul>
+                <li><a  href="index.html">Home</a></li>
+                <li><a class="active" href="works.html">Works</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </section>
+    <div class="work_header sec"><!--div for work header-->  
+        <img src="frontend/Assests/violetbg.png"><!--background image for header-->  
+        <div class="header_container"><!--container for card-->  
+            <div class="header_card"><!--another container for card-->  
+                <div class="front"></div><!--font div for card-->  
+                <div class="back"><!--back div for card with text-->  
+                    <p>Kyoto Animation (KyoAni) is renowned for its exceptional animation quality, emotional
+                        storytelling,
+                        and dedication to detail. Known for character-driven narratives, the studio emphasizes vibrant
+                        visuals and fluid motion. Unlike many studios, KyoAni employs animators as full-time staff,
+                        fostering better working conditions and creative collaboration. Their anime are crafted with
+                        care,
+                        from selecting compelling stories to creating expressive characters and delivering visually
+                        stunning
+                        works that resonate deeply with audiences.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <section class="animes sec"><!--anime section to show the works-->  
+        <p class="small">Kyoto Animation's</p><!--headertext-->  
+        <h1>Works</h1>
+        <div class="filter_container"><!--container to filter the works-->  
+            <div class="filter_buttons"><!--buttons to filter-->  
+                <button class="active" data-filter="all">All</button><!--show all-->  
+                <button data-filter="tv-show">TV Series</button><!--show tv series-->  
+                <button data-filter="movie">Movies</button><!--show movies-->  
+            </div>
+        </div>
+        <div class="filterable_cards"><!--div to contain all the cards/works-->  
+            <div class="anime_card" data-filter="movie"><!--anime work with movie filter-->  
+                <img src="frontend/Assests/silent.jpg"><!--image of anime-->  
+                <div class="info"><!--info of anime-->  
+                    <h2>A Silent Voice</h2>
+                    <p>A grade-school student with a hearing impairment is bullied and transfers to another school.
+                        Years later, the former bully is tormented by his behaviour and sets out to make amends.</p>
+                </div>
+            </div>
+            <div class="anime_card" data-filter="tv-show"><!--same card-->  
+                <img src="frontend/Assests/clannad.avif">
+                <div class="info">
+                    <h2>Clannad: After Story</h2>
+                    <p>As their life as a couple begins, Tomoya and Nagisa marry in Graduation, and shortly after, she
+                        is revealed to be pregnant. As Nagisa's pregnancy develops, she becomes increasingly bedridden,
+                        and the Okazakis' struggle to cope with Nagisa's continued and seemingly worsening illness.
+                    </p>
+                </div>
+            </div>
+            <div class="anime_card" data-filter="movie"><!--same card-->  
+                <img src="frontend/Assests/violetmovie.jpg">
+                <div class="info">
+                    <h2>Violet Evergarden: The Movie</h2>
+                    <p>After the aftermath of a war, a young girl who was used as a tool for war learns to properly
+                        live. With the scars of burns, she goes back to her past to discover her true feelings towards
+                        the Major.</p>
+                </div>
+            </div>
+            <div class="anime_card" data-filter="tv-show"><!--same card-->  
+                <img src="frontend/Assests/hibike3.avif">
+                <div class="info">
+                    <h2>Hibike! Euphonium 3</h2>
+                    <p>With the ensemble contest behind them, the members of the Kitauji High School concert band now
+                        aim to win a gold medal at the national competition. For third-year club president Kumiko Oumae
+                        and her friends, it is their last chance before graduation. Filled with anticipation and
+                        anxiety, Kumiko worries if she can successfully lead the band.
+                    </p>
+                </div>
+            </div>
+            <div class="anime_card" data-filter="tv-show"><!--same card-->  
+                <img src="frontend/Assests/haruhi.jpg">
+                <div class="info">
+                    <h2>The Disappearance of Haruhi Suzumiya</h2>
+                    <p>On December 18th, Kyon arrives at school and finds that everything has changed. Haruhi and Itsuki
+                        Koizumi are missing, Ryoko Asakura has mysteriously returned, Mikuru Asahina doesn't recognise
+                        him, and Yuki Nagato is an ordinary human.</p>
+                </div>
+            </div>
+            <div class="anime_card" data-filter="tv-show"><!--same card-->  
+                <img src="frontend/Assests/nichijou.jpg">
+                <div class="info">
+                    <h2>Nichijou</h2>
+                    <p>A grade-school student with a hearing impairment is bullied and transfers to another school.
+                        Years later, the former bully is tormented by his behaviour and sets out to make amends.</p>
+                </div>
+            </div>
+            <div class="anime_card" data-filter="movie"><!--same card-->  
+                <img src="frontend/Assests/konmovie.png">
+                <div class="info">
+                    <h2>K-on! The Movie</h2>
+                    <p>As their graduation approaches, four members of the high school light music club decide to make
+                        the most of their time together, travelling to London to write their farewell song.</p>
+                </div>
+            </div>
+            <div class="anime_card" data-filter="tv-show"><!--same card-->  
+                <img src="frontend/Assests/hibike2.png">
+                <div class="info">
+                    <h2>Hibike! Euphonium 2</h2>
+                    <p>Following their success in the qualifying round for the Kansai regional competition, the members
+                        of the Kitauji High School concert band set their sights on the next upcoming performance.
+                        Utilizing their summer break to the utmost, the band participates in a camp where they are
+                        instructed by their band advisor Noboru Taki and his friends who make their living as
+                        professional musicians.</p>
+                </div>
+            </div>
+            <div class="anime_card" data-filter="tv-show"><!--same card-->  
+                <img src="frontend/Assests/misskobayashi.avif">
+                <div class="info">
+                    <h2>Miss Kobayashi's Dragon Maid S</h2>
+                    <p>A comedic tale of a young woman's relationship with a magical transforming dragon maid! </p>
+                </div>
+            </div>
+            <div class="anime_card" data-filter="movie"><!--same card-->  
+                <img src="frontend/Assests/liz.png">
+                <div class="info">
+                    <h2>Liz and the Blue Bird</h2>
+                    <p>Liz's days of solitude come to an end when she meets a blue bird in the form of a young girl.
+                        Although their relationship blossoms, Liz must make a heart-wrenching decision in order to truly
+                        realize her love for Blue Bird.</p>
+                </div>
+            </div>
+            <div class="anime_card" data-filter="tv-show"><!--same card-->  
+                <img src="frontend/Assests/kon.jpg">
+                <div class="info">
+                    <h2>K-on!! Season 2</h2>
+                    <p>5 high school girls who become friends through the Light Music Club. Yui the lead guitarist,
+                        Tsumugi the keyboardist, Mio the bassist, Azusa the rhythm guitarist, and Ritsu the drummer.</p>
+                </div>
+            </div>
+            <div class="anime_card" data-filter="movie"><!--same card-->  
+                <img src="frontend/Assests/beyond.avif">
+                <div class="info">
+                    <h2>Beyond the Boundary: I'll Be Here</h2>
+                    <p>Akihito protects his friends from a new threat while trying to keep Mirai safe.</p>
+                </div>
+            </div>
+            <div class="anime_card" data-filter="movie"><!--same card-->  
+                <img src="frontend/Assests/lovetakeonme.jpg">
+                <div class="info">
+                    <h2>Love, Chunibyo & Other Delusions!: Take On Me</h2>
+                    <p>Rikka's third year of high school is upended when Toka's job compels a move to Italy, potentially
+                        splitting her and Yuta. An elopement suggestion from friends launches a nationwide journey.
+                    </p>
+                </div>
+            </div>
+            <div class="anime_card" data-filter="tv-show"><!--same card-->  
+                <img src="frontend/Assests/linking.jpg">
+                <div class="info">
+                    <h2>Tsurune - The Linking Shot -</h2>
+                    <p>A grade-school student with a hearing impairment is bullied and transfers to another school.
+                        Years later, the former bully is tormented by his behaviour and sets out to make amends.</p>
+                </div>
+            </div>
+            <div class="anime_card" data-filter="tv-show"><!--same card-->  
+                <img src="frontend/Assests/hyouka.jpg">
+                <div class="info">
+                    <h2>Hyouka</h2>
+                    <p>Hyouka centers on Oreki Hotarou and his life in the Classic Literature Club. His mundane
+                        world is
+                        flipped upside down as they begin to solve various mysteries. </p>
+                </div>
+            </div>
+            <div class="anime_card" data-filter="tv-show"><!--same card-->  
+                <img src="frontend/Assests/hibike3.avif">
+                <div class="info">
+                    <h2>Hibike! Euphonium</h2>
+                    <p>Now that Kumiko Oumae has enrolled in Kitauji High School, she hopes to forget about her past.
+                        Despite her desire for a fresh start, she gets dragged into the school's band club by her new
+                        friends—Sapphire Kawashima and Hazuki Katou—and is once again stuck playing the euphonium.</p>
+                </div>
+            </div>
+            <div class="anime_card" data-filter="tv-show"><!--same card-->  
+                <img src="frontend/Assests/clannads1.jpg">
+                <div class="info">
+                    <h2>Clannad</h2>
+                    <p>Tomoya Okazaki is a delinquent who finds life dull and believes he'll never amount to anything.
+                        Along with his friend Youhei Sunohara, he skips school and plans to waste his high school days
+                        away.</p>
+                </div>
+            </div>
+            <div class="anime_card" data-filter="tv-show"><!--same card-->  
+                <img src="frontend/Assests/misskoboyashis1.avif">
+                <div class="info">
+                    <h2>Miss Kobayashi's Dragon Maid</h2>
+                    <p>
+                        As Kobayashi sets off for another day at work, she opens her apartment door only to be met by an
+                        unusually frightening sight—the head of a dragon, staring at her from across the balcony. The
+                        dragon immediately transforms into a cute, busty, and energetic young girl dressed in a maid
+                        outfit, introducing herself as Tooru.</p>
+                </div>
+            </div>
+            <div class="anime_card" data-filter="movie"><!--same card-->  
+                <img src="frontend/Assests/tamakolove.png">
+                <div class="info">
+                    <h2>Tamako Love Story</h2>
+                    <p>Tamako's life is changed forever when her best friend confesses his love for her.</p>
+                </div>
+            </div>
+            <div class="anime_card" data-filter="tv-show"><!--same card-->  
+                <img src="frontend/Assests/k-on.jpg">
+                <div class="info">
+                    <h2>K-On!</h2>
+                    <p>A fresh high school year always means much to come, and one of those things is joining a club.
+                        Being in a dilemma about which club to join, Yui Hirasawa stumbles upon and applies for the
+                        Light Music Club, which she misinterprets to be about playing simple instruments, such as
+                        castanets. Unable to play an instrument, she decides to visit to apologize and quit.</p>
+                </div>
+            </div>
+            <div class="anime_card" data-filter="tv-show"><!--same card-->  
+                <img src="frontend/Assests/beyonds1.png">
+                <div class="info">
+                    <h2>Beyond the Boundary</h2>
+                    <p>In an unexpected encounter, Akihito saves a classmate named Kuriyama Mirai, whom he believes is
+                        about to jump off the school building, not knowing that Mirai is a spirit world warrior. Mirai,
+                        who was sent to kill Akihito, fails because of Akihito's immortal blood.</p>
+                </div>
+            </div>
+            <div class="anime_card" data-filter="tv-show"><!--same card-->  
+                <img src="frontend/Assests/chuniii.jpg">
+                <div class="info">
+                    <h2>Love, Chunibyo & Other Delusions!</h2>
+                    <p>A high school boy named Yūta Togashi, who tries to discard his embarrassing past grandiose
+                        delusions, until he meets a girl named Rikka Takanashi, who exhibits her own signs of Eighth
+                        Grader Syndrome.</p>
+                </div>
+            </div>
+            <div class="anime_card" data-filter="tv-show"><!--same card-->  
+                <img src="frontend/Assests/tsurune.jpg">
+                <div class="info">
+                    <h2>Tsurune: Kazemai High School Kyudo Club</h2>
+                    <p>"Tsurune"—It's the sound made by the bowstring when an arrow is released, and the sound that
+                        inspired Minato Narumiya to learn kyudo, a modern Japanese martial art focusing on archery.
+                        However, an incident during his last middle school tournament caused him to quit the sport.</p>
+                </div>
+            </div>
+            <div class="anime_card" data-filter="tv-show"><!--same card-->  
+                <img src="frontend/Assests/free.jpg">
+                <div class="info">
+                    <h2>Free! Dive to the Future</h2>
+                    <p>While attending college in Tokyo, Haruka Nanase meets Asahi Shiina again and recalls his memories
+                        from his middle school years, including a promise he made to Ikuya Kirishima. Makoto Tachibana
+                        is working toward a new dream while also studying in Tokyo.</p>
+                </div>
+            </div>
+        </div>
+        <div class="down"></div><!--div to add space between the cards and footer-->  
+
+    
+
+    </section>
+    <footer class="footer_work"><!--same footer as the home page-->  
+        <div class="footer_row">
+            <div class="footer_col">
+                <img src="../frontend/Assests/kyoanilogo.png" alt="logo" class="foot_logo" />   
+            </div>
+            <div class="footer_col">
+                <h3>About Us</h3>
+                <p>Coorporate Profile</p>
+                <p>Detials of Our Business</p>
+                <p>Studios and Offices</p>
+                <p>Event Information</p>
+                <p>Our Commercials</p>
+            </div>
+            <div class="footer_col">
+                <h3>Store</h3>
+                <p>Kyoani Shop! Online Store</p>
+                <p>Kyoani&Do Shop!</p>
+            </div>
+        </div>
+    </footer>
+    <script src="frontend/filter.js"></script>
+</body>
+
+</html>

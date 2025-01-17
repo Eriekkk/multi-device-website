@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="frontend/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <title>Kyoto Animation</title>
+</head>
+<body class="feedback_body"><!--class for feedback body-->  
+    <section>
+        <nav class="navbar"><!--same navbar as home page-->  
+            <img src="../frontend/Assests/kyoanilogo.png" alt="logo" class="logo" />
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>  
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a  href="works.html">Works</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </section><!--video background-->  
+          <video autoplay loop muted plays-inline class="feedback_vid">
+            <source src="../frontend/Assests/kyoanivid.mp4" type="video/mp4">
+        </video>
+    <section class="feedback_container"><!--sectin for feedback-->  
+        <h1>Anime Feedback</h1><!--feedback title-->  
+        <form><!--form-->  
+            <label for="name">Full Name:</label><!--label name-->  
+            <input type="text" id="name" name="name" required><!--inputing name-->  
+            <label for="anime">Anime:</label><!--label for anime-->  
+            <input type="text" id="anime_input" name="anime" required><!--inputing anime-->  
+            <label for="feedback_text">Feedback:</label><!--feedback label for anime-->  
+            <textarea name="feedback_text" resize="none" id="feedback_text" cols="30" rows="10"></textarea><!--inputing feedback-->  
+        </form>
+        <button id="submit">Submit</button><!--submit button to submit the form-->  
+    </section>
+    <footer class="footer_feedback" ><!--same footer as the home page-->  
+        <div class="footer_row">
+            <div class="footer_col">
+                <img src="../frontend/Assests/kyoanilogo.png" alt="logo" class="foot_logo" />   
+            </div>
+            <div class="footer_col">
+                <h3>About Us</h3>
+                <p>Coorporate Profile</p>
+                <p>Detials of Our Business</p>
+                <p>Studios and Offices</p>
+                <p>Event Information</p>
+                <p>Our Commercials</p>
+            </div>
+            <div class="footer_col">
+                <h3>Store</h3>
+                <p>Kyoani Shop! Online Store</p>
+                <p>Kyoani&Do Shop!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script> 
+document.getElementById('submit').addEventListener('click', async () => {
+    const name = document.getElementById('name').value.trim();
+    const anime = document.getElementById('anime_input').value.trim();
+    const feedbacktext = document.getElementById('feedback_text').value.trim();
+
+    console.log("Data to send:", { name, anime, feedbacktext });
+
+    if (name && anime && feedbacktext) {
+        try {
+            const response = await fetch('http://localhost:4000/api/user/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ name, anime, feedbacktext }),
+            });
+
+            const data = await response.json();
+            console.log("Response from server:", data); 
+
+            if (response.ok) {
+                alert('Feedback submitted successfully!');
+                error.style.display = 'none';
+            } else {
+                error.textContent = data.message || 'Submission failed!';
+                error.style.display = 'block';
+            }
+        } catch (err) {
+            console.error("Fetch error:", err.message); 
+            error.textContent = 'An error occurred. Please try again later.';
+            error.style.display = 'block';
+        }
+    } else {
+        error.textContent = 'All fields are required!';
+        error.style.display = 'block';
+    }
+});
+    </script>
+</body>
+</html>
